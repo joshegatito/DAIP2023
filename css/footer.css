@@ -1,0 +1,76 @@
+/* Estilos para el footer */
+footer {
+    background: #414141;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-us {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px; /* Aumentar el espacio inferior */
+    margin-top: 20px; /* Agregar un espacio superior */
+}
+
+
+.brand {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: #fff;
+    color: #764ba2;
+    transition: all 0.3s ease;
+}
+
+.social-media-icon i {
+    font-size: 24px;
+}
+
+.social-media-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .contact-us {
+        margin-bottom: 20px; /* Reducir el espacio inferior */
+    }
+    
+    .social-media {
+        margin-bottom: 0; /* Eliminar el espacio entre íconos y texto */
+    }
+    
+    .social-media-icon {
+        width: 40px; /* Reducir el tamaño de los íconos */
+        height: 40px;
+        font-size: 20px; /* Reducir el tamaño del ícono */
+        margin: 0 8px; /* Reducir el espacio entre íconos */
+    }
+}

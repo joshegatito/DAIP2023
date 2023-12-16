@@ -1,0 +1,47 @@
+/* Estilos para la sección de tarjetas de presentación */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Permitir el ajuste en dispositivos móviles */
+    margin-top: 30px; /* Espaciado superior */
+}
+
+.cards .card {
+    background: #4d0686;
+    display: flex;
+    flex-direction: column; /* Cambio a disposición vertical */
+    width: 46%;
+    min-width: 300px; /* Ancho mínimo para evitar cambios extremos */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto; /* Espaciado alrededor de la imagen */
+}
+
+.cards .card > .contenido-texto-card {
+    width: 100%;
+    color: #fff;
+    text-align: center; /* Centrar el texto */
+    padding: 20px 10px; /* Espaciado interno */
+}
+
+.cards .card > .contenido-texto-card p {
+    font-weight: 300;
+    margin-top: 10px; /* Espaciado superior para los párrafos */
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .cards .card {
+        width: 90%; /* Ajustar el ancho al 90% del contenedor */
+    }
+}
